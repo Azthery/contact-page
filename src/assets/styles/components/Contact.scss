@@ -1,0 +1,15 @@
+@import "../Vars.scss";
+
+.contact__backgroud{
+    background-color: $tertiary;
+}
+.contact{
+    @include flex-center;
+    flex-direction: column;
+    h1{
+        color: $gray-3;
+        width: fit-content;
+        margin-bottom: 4rem;
+    }
+
+}

@@ -1,0 +1,47 @@
+@import "../Vars.scss";
+
+.form-contact{
+    @include flex-center;
+    flex-direction: column;
+    form{
+        @include flex-center;
+        flex-direction: column;
+        border-radius: $border-radius;
+        background-color: $gray-3;
+        padding: 2rem;
+        label{
+            color: $gray-1;
+            @include flex-center;
+            align-self: flex-start;
+            margin-left: 0.5rem;
+            span{
+                color: red;
+                font-size: $font-size-2;
+                font-weight: bold;
+            }
+        }
+        input, textarea, button{
+            margin-bottom: 1rem;
+            border-radius: $border-radius;
+            border: 1px solid $primary;
+            font: $font-size-stack $font-style-stack;
+        }
+        input, textarea{
+            background-color: $gray-3;
+            width: 19rem;
+            padding: 0.75rem;
+            outline: none;
+            resize: none;
+        }
+        button{
+            cursor: pointer;
+            width: 21rem;
+            height: 3rem;
+            margin: 0;
+            background-color: $secondary;
+            color: $gray-3;
+            font-weight: bold;
+            border: 1px solid $secondary;
+        }
+    }
+}

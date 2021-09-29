@@ -1,0 +1,60 @@
+$font-style-stack: "europa", sans-serif;
+$font-size-stack: 16px;
+
+$font-size-title: 2.2rem;
+$font-size-1: 2rem;
+$font-size-2: 1.5rem;
+$font-size-3: 1.25rem;
+
+$font-weight-bold: 600;
+$font-weight-heavy: 800;
+
+$gray-0: #000000;
+$gray-1: #050102;
+$gray-2: #dddddd;
+$gray-3: #f9f9f9;
+$gray-4: #f9f9f98e;
+$gray-5: rgba(8, 8, 8, 0.5);
+
+
+$primary: #404040;
+$secondary: #14c4a3;
+$tertiary: #9a3bc0;
+$quaternary: #8bb7f0;
+
+$spacer-1: .25rem;
+$spacer-2: .5rem;
+$spacer-3: 1rem;
+$spacer-4: 1.5rem;
+$spacer-5: 2rem;
+
+$height-1: 5rem;
+$height-2: 5rem;
+$height-3: 3.5rem;
+$height-component: 50rem;
+
+$padding: 1.5rem;
+
+$border-radius: 0.4rem;
+
+$section-margin-vertical: 3rem 0px;
+
+
+@mixin responsive{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    main{
+        @media screen and (min-width: 1224px)  {
+            width: 1200px;
+        }
+        @media screen and (max-width: 1224px){
+            width: auto;
+        }
+    }
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

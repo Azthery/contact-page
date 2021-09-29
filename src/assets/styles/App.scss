@@ -1,0 +1,29 @@
+@import "./Vars.scss";
+
+body{
+  margin: 0;
+}
+.App {
+  color: $gray-1;
+  background-color: $gray-3;
+  text-align: center;
+  font-size: $font-size-stack;
+  font-family: $font-style-stack;
+  width: 100%;
+}
+.contain{
+  width: 100%;
+  main{
+    margin: $section-margin-vertical;
+    h1{
+      font-size: $font-size-title;
+    }
+  }
+  @include responsive;
+}
+// .sticky{
+//   position: -webkit-sticky;
+//   position: sticky;
+//   top: 0;
+//   padding-bottom: $spacer-4;
+// }

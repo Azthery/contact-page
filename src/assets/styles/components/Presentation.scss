@@ -1,0 +1,74 @@
+@import "../Vars.scss";
+
+.presentation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: $section-margin-vertical;
+    
+    .presentation__personaldata{
+        h1{
+            font-size: $font-size-title;
+        }
+        img{
+            background-color: $secondary;
+            border-radius: 100%;
+            padding: $spacer-2;
+        }
+        p{
+            max-width: 41rem
+        }
+    }
+
+    .presentation__data{
+        @include flex-center;
+        flex-wrap: wrap;
+        div{
+            @include flex-center;
+            align-items: flex-end;
+            width: 18rem;
+            height: 11rem;
+            margin: 2rem;
+            background-size:cover;
+            background-position: center;
+            border-radius: $border-radius;
+            a{
+                @include flex-center;
+                height: 20%;
+                text-decoration: none;
+                width: 100%;
+                background-color: $gray-5;
+                h1{
+                    position: absolute;
+                    color: $gray-2;
+                    font-size: $font-size-2;
+                    margin: 0;
+                }
+                .link{
+                    opacity: 0;
+                }
+                .link:hover{
+                    text-decoration: underline;
+                }
+            }
+            a:hover{
+                .name{
+                    opacity: 0;
+                }
+                .link{
+                    opacity: 1;
+                }
+            }
+
+    
+        }
+        .presentation__data--curriculum{
+            background-image: url("../../static/Curriculum.jpg");
+        }
+        .presentation__data--repository{
+            background-image: url("https://i.blogs.es/4e5da4/github3/450_1000.jpg");
+        }
+    }
+}
+
