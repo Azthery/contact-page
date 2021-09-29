@@ -3,7 +3,6 @@ import '../assets/styles/App.scss';
 
 import dataBase from '../firebase/firebaseConfig';
 
-import HeaderNav from '../components/HeaderNav';
 import Presentation from '../components/Presentation';
 import Projects from '../components/Projects';
 import ProjectItem from '../components/ProjectItem';
@@ -21,9 +20,9 @@ const App = () => {
       <Presentation></Presentation>
       <Projects>
         {
-          projectsItems.length &&
-          projectsItems.map(el => (
-              <ProjectItem item={el}/>
+          projectsItems.length > 0 &&
+          projectsItems.map(data => (
+              <ProjectItem data={data}/>
             ))
         }
       </Projects>

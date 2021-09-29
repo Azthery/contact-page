@@ -3,12 +3,12 @@
 .form-contact{
     @include flex-center;
     flex-direction: column;
+    border-radius: $border-radius;
+    background-color: $gray-3;
+    padding: 2rem;
     form{
         @include flex-center;
         flex-direction: column;
-        border-radius: $border-radius;
-        background-color: $gray-3;
-        padding: 2rem;
         label{
             color: $gray-1;
             @include flex-center;
@@ -21,12 +21,12 @@
             }
         }
         input, textarea, button{
-            margin-bottom: 1rem;
             border-radius: $border-radius;
             border: 1px solid $primary;
             font: $font-size-stack $font-style-stack;
         }
         input, textarea{
+            margin-bottom: 1rem;
             background-color: $gray-3;
             width: 19rem;
             padding: 0.75rem;
@@ -42,6 +42,20 @@
             color: $gray-3;
             font-weight: bold;
             border: 1px solid $secondary;
+        }
+        h4{
+            @include flex-center;
+            color: $tertiary;
+            margin: 0 0 0.5rem 0;
+            height: 1rem;
+            span{
+                margin-left: 0.25rem;
+                color: red;
+            }
+            img{
+                margin-left: 0.25rem;
+                height: 1.2rem;
+            }
         }
     }
 }

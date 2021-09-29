@@ -7,6 +7,7 @@ const useProjects = (API) =>{
              {
                  name: String,
                  tags: Array,
+                 url: String,
                  img: String
              }
          ]
@@ -22,7 +23,7 @@ const useProjects = (API) =>{
           }
         getData();
     }, []);
-
+    
     return projects;
 };
 
