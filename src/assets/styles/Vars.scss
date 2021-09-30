@@ -48,9 +48,7 @@ $section-margin-vertical: 3rem 0px;
         @media screen and (min-width: 1224px)  {
             width: 1200px;
         }
-        @media screen and (max-width: 1224px){
-            width: 100%;
-        }
+            width: 100vw;
     }
 }
 @mixin flex-center{
