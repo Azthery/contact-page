@@ -9,7 +9,7 @@ const ProjectItem = ( {data} ) => (
                 data.tags.map((tag) => <p>{tag}</p>)
             }
         </div>
-        <a href={data.url} className="project--name">
+        <a href={data.url} className="project--name" target="_blank">
             <h1>{data.name}</h1>
         </a>
     </li>
