@@ -19,7 +19,7 @@ const Presentation = () => (
             </div>
             <div className="presentation__data">
                 <div className="presentation__data--curriculum">
-                    <a href="https://github.com/Azthery/Portafolio/raw/master/src/assets/doc/Ignacio%20Sepulveda%20-%20curriculunm.pdf">
+                    <a href="https://firebasestorage.googleapis.com/v0/b/contact-page-5f867.appspot.com/o/Ignacio%20Sepulveda%20-%20curriculunm.pdf?alt=media&token=fcbd4430-4733-4aff-8b56-a0732b50c347">
                         <h1 className="name">Curriculum</h1>
                         <h1 className="link">Descargar</h1>
                     </a>
